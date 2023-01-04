@@ -1,7 +1,6 @@
-package com.asule.三用私有构造器或者枚举类型强化Singleton属性;
+package com.asule.第2章.第3条用私有构造器或者枚举类型强化Singleton属性;
 
 import java.io.Serializable;
-import java.lang.reflect.Constructor;
 
 /**
  * jdk1.5之前

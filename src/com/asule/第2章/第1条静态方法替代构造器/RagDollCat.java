@@ -1,4 +1,4 @@
-package com.asule.一静态方法替代构造器;
+package com.asule.第2章.第1条静态方法替代构造器;
 
 /**
  * @author ASuLe

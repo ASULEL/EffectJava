@@ -1,0 +1,13 @@
+1.默认的从Object继承的equals表示内存地址唯一性，也就是 == 的判定（ == 判定地址相同）
+2.很多工具类或者第三方框架中会调用equals方法来判断相等性，那么equals需要满足约定
+    2.1 自反性: 非null的对象 使用x.equals(x)应该是true
+    2.2 对称性: x.equals(y)和有y.equals(x)必须结果一样 //注意父子继承的设计
+    2.3 传递性: x.equals(y)为true,且y.equals(z)为true时,要求x.equals(z)也必须时true //具有equals判断的不同类中，                                         ·                        ·
+    使用了不同信息来计算，比如x和y比较使用了属性a和b,y和z比较使用属性b和c,x和z比较使用属性a和c(即一定要用相同的元素去进行比较)
+    2.4 一致性: 如果x和y的信息没有变化，那么多次调用x.equals(y)必须返回相同的结果 //随机属性或者自变属性的比较
+    2.5 x.equals(null);的结果是false
+
+ 3.注意事项：
+    3.1 覆盖equals时,需要同时覆盖hashCode第九条
+    3.2 不要企图让equals过于智能，这可能导致性能问题
+    3.3 参数时Object,注意不要写成本类

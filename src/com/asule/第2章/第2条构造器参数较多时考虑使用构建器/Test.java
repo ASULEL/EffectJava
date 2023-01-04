@@ -1,4 +1,4 @@
-package com.asule.二构造器参数较多时考虑使用构建器;
+package com.asule.第2章.第2条构造器参数较多时考虑使用构建器;
 
 import java.time.LocalDateTime;
 
